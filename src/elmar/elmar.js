@@ -15,7 +15,7 @@ export const simple = component => ({
 
 export const initSimple = (component, ...args) => init(simple(component), ...args)
 
-export const forward = (signal, f) => a => () => signal(f(a))()
+export const forward = (signal, f) => a => signal(f(a))
 
 export const targetValue = e => e.target.value
 
