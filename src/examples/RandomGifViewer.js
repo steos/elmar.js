@@ -17,7 +17,7 @@ const getRandomGif = (topic) => () =>
     .then(url => Action.NewGif(url))
 
 const randomUrl = topic =>
-  `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${topic}`
+  `//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${topic}`
 
 export const init = (topic) =>
   [ {topic, gifUrl: null, error: false}
